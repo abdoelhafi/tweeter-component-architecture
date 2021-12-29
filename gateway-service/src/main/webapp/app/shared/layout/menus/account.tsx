@@ -6,11 +6,11 @@ import { NavDropdown } from './menu-components';
 const accountMenuItemsAuthenticated = () => (
   <>
     <MenuItem icon="wrench" to="/account/settings" data-cy="settings">
-      Settings
+      Profil
     </MenuItem>
-    <MenuItem icon="lock" to="/account/password" data-cy="passwordItem">
+    {/* <MenuItem icon="lock" to="/account/password" data-cy="passwordItem">
       Password
-    </MenuItem>
+    </MenuItem> */}
     <MenuItem icon="sign-out-alt" to="/logout" data-cy="logout">
       Sign out
     </MenuItem>
