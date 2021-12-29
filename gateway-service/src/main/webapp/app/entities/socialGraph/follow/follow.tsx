@@ -46,7 +46,7 @@ export const Follow = (props: RouteComponentProps<{ url: string }>) => {
               <tr>
                 <th>ID</th>
                 <th>Status</th>
-                <th>Follow</th>
+                <th>User</th>
                 <th />
               </tr>
             </thead>
@@ -62,15 +62,11 @@ export const Follow = (props: RouteComponentProps<{ url: string }>) => {
                   <td>{follow.follow ? follow.follow.login : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
-                      <Button tag={Link} to={`${match.url}/${follow.id}`} color="info" size="sm" data-cy="entityDetailsButton">
-                        <FontAwesomeIcon icon="eye" /> <span className="d-none d-md-inline">View</span>
-                      </Button>
+                    
                       <Button tag={Link} to={`${match.url}/${follow.id}/edit`} color="primary" size="sm" data-cy="entityEditButton">
-                        <FontAwesomeIcon icon="pencil-alt" /> <span className="d-none d-md-inline">Edit</span>
+                        <FontAwesomeIcon icon="pencil-alt" /> <span className="d-none d-md-inline">Change Status</span>
                       </Button>
-                      <Button tag={Link} to={`${match.url}/${follow.id}/delete`} color="danger" size="sm" data-cy="entityDeleteButton">
-                        <FontAwesomeIcon icon="trash" /> <span className="d-none d-md-inline">Delete</span>
-                      </Button>
+                      
                     </div>
                   </td>
                 </tr>

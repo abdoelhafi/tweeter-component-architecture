@@ -85,7 +85,7 @@ export const RegisterPage = () => {
               }}
               data-cy="firstPassword"
             />
-            <PasswordStrengthBar password={password} />
+            {/* <PasswordStrengthBar password={password} /> */}
             <ValidatedField
               name="secondPassword"
               label="New password confirmation"
@@ -103,7 +103,7 @@ export const RegisterPage = () => {
               Register
             </Button>
           </ValidatedForm>
-          <p>&nbsp;</p>
+          {/* <p>&nbsp;</p>
           <Alert color="warning">
             <span>If you want to</span>
             <a className="alert-link"> sign in</a>
@@ -112,7 +112,7 @@ export const RegisterPage = () => {
               <br />- Administrator (login=&quot;admin&quot; and password=&quot;admin&quot;)
               <br />- User (login=&quot;user&quot; and password=&quot;user&quot;).
             </span>
-          </Alert>
+          </Alert> */}
         </Col>
       </Row>
     </div>

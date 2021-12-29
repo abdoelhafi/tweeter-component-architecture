@@ -64,10 +64,10 @@ const LoginModal = (props: ILoginModalProps) => {
                 error={errors.password}
                 isTouched={touchedFields.password}
               />
-              <ValidatedField name="rememberMe" type="checkbox" check label="Remember me" value={true} register={register} />
+              {/* <ValidatedField name="rememberMe" type="checkbox" check label="Remember me" value={true} register={register} /> */}
             </Col>
           </Row>
-          <div className="mt-1">&nbsp;</div>
+          {/* <div className="mt-1">&nbsp;</div>
           <Alert color="warning">
             <Link to="/account/reset/request" data-cy="forgetYourPasswordSelector">
               Did you forget your password?
@@ -75,12 +75,12 @@ const LoginModal = (props: ILoginModalProps) => {
           </Alert>
           <Alert color="warning">
             <span>You don&apos;t have an account yet?</span> <Link to="/account/register">Register a new account</Link>
-          </Alert>
+          </Alert> */}
         </ModalBody>
         <ModalFooter>
-          <Button color="secondary" onClick={handleClose} tabIndex={1}>
+          {/* <Button color="secondary" onClick={handleClose} tabIndex={1}>
             Cancel
-          </Button>{' '}
+          </Button>{' '} */}
           <Button color="primary" type="submit" data-cy="submit">
             Sign in
           </Button>
