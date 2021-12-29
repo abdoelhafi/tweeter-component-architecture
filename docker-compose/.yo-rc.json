@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "gateway-service",
+      "home-time-line-service",
+      "messaging-service",
+      "search-service",
+      "social-graph-service",
+      "tweet-service",
+      "user-time-line-service"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "SpringCloudGateway",
+    "clusteredDbApps": {},
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "NGJhYTU3ZjAyMzg2Y2Y3ZmVlNDgyNjUzMmFlOGZjMGZiYzdiMGM2MDA5ZTAwOTQ5NjkxNTU3YjI2MjljZTU4YmVjNWE5ZGQxNmQ3ZmE5ZGE4ZDYxMGU1YTRiOWVjNzFmMWM1MQ=="
+  }
+}

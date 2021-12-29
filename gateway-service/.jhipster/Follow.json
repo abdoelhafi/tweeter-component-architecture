@@ -1,0 +1,30 @@
+{
+  "microservicePath": "../social-graph-service",
+  "microserviceName": "socialGraph",
+  "clientRootFolder": "socialGraph",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "FOLLOW,UNFOLLOW"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "follow",
+      "otherEntityName": "user",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "login",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "follow"
+    }
+  ],
+  "service": "serviceImpl",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Follow",
+  "changelogDate": "20211229154319"
+}
